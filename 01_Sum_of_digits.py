@@ -2,6 +2,14 @@
 
 num = input('Введите число: ')
 
+# for i in ['-', '.', ',']:
+#     if i in num:
+#         num = num.replace(i, "")
+# sum = 0
+# for i in num:
+#     sum = sum + int(i)
+# print(sum)
+
 num_list = list(filter(lambda x: x.isdigit(), list(num)))
 num_sum = sum(list(map(int,num_list)))
 
